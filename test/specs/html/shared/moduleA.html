@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/mocha/mocha.css'/>
+    </head>
+<body>
+<div id='mocha'></div>
+<script src='/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/requirejs/require.js'></script>
+<script src='/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/mocha/mocha.js'></script>
+<script type='text/javascript'>
+    var config = JSON.parse('{"baseUrl":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib","paths":{"moduleA":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleA","moduleB":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleB","moduleC":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleC","squire":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/squirejs/src/Squire","chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/chai/chai","sinon":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon-built/index","sinon-chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon-chai/lib/sinon-chai","castle":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/castle"}}'),
+        spec = ['/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/test/specs/shared/moduleA.js'];
+
+    window.castle = {};
+    window.castle.config = JSON.parse('{"mocks":{"server":{"baseUrl":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/test/mocks","paths":{"moduleA":"../test/mocks/moduleA","moduleB":"../test/mocks/moduleB","moduleC":"../test/mocks/moduleC","squire":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/squirejs/src/Squire","chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/chai","sinon":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon/lib","sinon-chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon-chai/lib","castle":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/castle"}},"client":{"baseUrl":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/test/mocks","paths":{"moduleA":"../test/mocks/moduleA","moduleB":"../test/mocks/moduleB","moduleC":"../test/mocks/moduleC","squire":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/squirejs/src/Squire","chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/chai","sinon":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon/lib","sinon-chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon-chai/lib","castle":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/castle"}}},"specs":{"baseUrl":"test/specs","client":[],"server":[],"common":["test/specs/shared/moduleA.js"],"client-target":"test/specs/html"},"requirejs":{"server":{"baseUrl":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib","paths":{"moduleA":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleA","moduleB":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleB","moduleC":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleC","squire":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/squirejs/src/Squire","chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/chai","sinon":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon/lib","sinon-chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon-chai/lib","castle":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/castle"}},"client":{"baseUrl":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib","paths":{"moduleA":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleA","moduleB":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleB","moduleC":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/lib/moduleC","squire":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/squirejs/src/Squire","chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/chai/chai","sinon":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon-built/index","sinon-chai":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/node_modules/sinon-chai/lib/sinon-chai","castle":"/home/z/Work/DeudaTecnica/problems/instanceof-castle-mock-dependency/node_modules/grunt-castle/castle"}}},"reporting":{"dest":"reports","src":"lib","options":{},"analysis":{"files":["lib/**/*.js"]},"coverage":{"dest":"lib-cov","exclude":"modules"}},"args":["test"],"server":true,"client":true}');
+    requirejs.config(config);
+    mocha.setup({ ui: 'bdd' });
+
+    requirejs(['chai', 'sinon', 'sinon-chai'
+    ].concat(spec), function (chai, sinon, sinonChai) {
+        chai.use(sinonChai);
+        window.chai = chai;
+        window.assert = chai.assert;
+        window.should = chai.should;
+        window.expect = chai.expect;
+
+        if (window.mochaPhantomJS) {
+            mochaPhantomJS.run();
+        } else {
+            mocha.run();
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "grunt-castle-issue-29",
+  "author": "CatBakun",
+  "version": "0.0.1",
+  "description": "an example that illustrates an issue realted to the instanceof operator when using mocks",
+  "dependencies": {
+    "grunt": "0.4.x",
+    "grunt-castle": "0.4.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-castle": "^0.4.3"
+  }
+}
